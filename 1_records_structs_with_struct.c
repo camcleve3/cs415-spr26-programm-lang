@@ -12,9 +12,9 @@ typedef struct {
 int main() {
     // Create an array of students
     Student students[3] = {
-        {"Alice Johnson", 18, 3.85f, "freshman"},
-        {"Bob Smith", 19, 3.92f, "sophomore"},
-        {"Carol White", 20, 3.76f, "junior"}
+        {"Alex Johnson", 18, 3.91f, "freshman"},
+        {"Cam Smith", 20, 3.84f, "sophomore"},
+        {"Carol White", 21, 3.72f, "junior"}
     };
 
     // Display student information

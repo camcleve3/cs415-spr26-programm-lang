@@ -10,9 +10,9 @@ class Student:
 
 # Create a list of students
 students = [
-    Student("Alice Johnson", 18, 3.85, "freshman"),
-    Student("Bob Smith", 19, 3.92, "sophomore"),
-    Student("Carol White", 20, 3.76, "junior")
+    Student("Alex Johnson", 18, 3.91, "freshman"),
+    Student("Cam Smith", 20, 3.84, "sophomore"),
+    Student("Carol White", 21, 3.72, "junior")
 ]
 
 # Display student information

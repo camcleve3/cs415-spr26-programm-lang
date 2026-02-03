@@ -6,12 +6,12 @@
 #define COLS_B 3
 
 // Print matrix
-void print_matrix(int matrix[10][10], int rows, int cols) {
+void print_matrix(int *matrix, int rows, int cols) {
     int i = 0;
     while (i < rows) {
         int j = 0;
         while (j < cols) {
-            printf("%d ", matrix[i][j]);
+            printf("%d ", *(matrix + i * cols + j));
             j++;
         }
         printf("\n");
@@ -55,15 +55,15 @@ int main() {
 
     printf("=== Matrix Multiplication with Logical Loops (while) ===\n");
     printf("Matrix A (%d x %d):\n", ROWS_A, COLS_A);
-    print_matrix(A, ROWS_A, COLS_A);
+    print_matrix((int *)A, ROWS_A, COLS_A);
 
     printf("\nMatrix B (%d x %d):\n", ROWS_B, COLS_B);
-    print_matrix(B, ROWS_B, COLS_B);
+    print_matrix((int *)B, ROWS_B, COLS_B);
 
     multiply_matrices_logical(A, B, result);
 
     printf("\nResult (A * B) (%d x %d):\n", ROWS_A, COLS_B);
-    print_matrix(result, ROWS_A, COLS_B);
+    print_matrix((int *)result, ROWS_A, COLS_B);
 
     return 0;
 }
